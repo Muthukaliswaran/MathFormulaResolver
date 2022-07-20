@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'math_formula_convertor.dart';
+
 void main() {
   runApp(const HomeApp());
 }
@@ -13,10 +15,23 @@ class HomeApp extends StatefulWidget{
 }
 
 class HomeAppState extends State<HomeApp>{
+
+  @override
+  void initState() {
+    MathFormulaConvertor.mathFunc("add(1,2)").then((value){
+      print("Math func-->> ${value ?? ""}");
+    });
+
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(
+        ),
+      ),
     );
   }
 }

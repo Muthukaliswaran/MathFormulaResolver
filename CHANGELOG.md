@@ -6,3 +6,7 @@
  * Multiply
  * Divide
  * Nester operation
+
+1.0.1+2:
+
+- Recursion formula calling way updated

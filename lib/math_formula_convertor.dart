@@ -1,8 +1,9 @@
 import 'package:function_tree/function_tree.dart';
 
 class MathFormulaConvertor{
-  String evaluatedExpr ="";
-  mathFunc(String expr) {
+  static String evaluatedExpr ="";
+
+  static Future<String?> mathFunc(String expr) async{
     evaluatedExpr = expr;
     int addIndex = expr.contains("add") ? expr.indexOf("add") : -1;
     int subtractIndex =
@@ -84,16 +85,16 @@ class MathFormulaConvertor{
       replaceCloseBracket();
     }
 
-    mathFunc(evaluatedExpr);
+    return mathFunc(evaluatedExpr);
   }
 
-  String replaceCharAt(String oldString, int index, String newChar) {
+  static String replaceCharAt(String oldString, int index, String newChar) {
     return oldString.substring(0, index) +
         newChar +
         oldString.substring(index + 1);
   }
 
-  replaceCloseBracket() {
+  static replaceCloseBracket() {
     int tempOpenBracketCount = 1;
     for (int h = 0; h < evaluatedExpr.length; h++) {
       if (evaluatedExpr[h] == "(") {
@@ -109,7 +110,7 @@ class MathFormulaConvertor{
     }
   }
 
-  findAndReplaceComma(String operatorSymbol, int firstReplaceableIndex) {
+  static findAndReplaceComma(String operatorSymbol, int firstReplaceableIndex) {
     int firstCommaIndex = evaluatedExpr.indexOf(",");
     int parenthesisCount = 0;
     int tempCommaCount = 0;
