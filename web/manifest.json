@@ -1,6 +1,6 @@
 {
-    "name": "math_formula_convertor",
-    "short_name": "math_formula_convertor",
+    "name": "math_formula_resolver",
+    "short_name": "math_formula_resolver",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

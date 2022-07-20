@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "math_formula_convertor" "\0"
+            VALUE "FileDescription", "math_formula_resolver" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "math_formula_convertor" "\0"
+            VALUE "InternalName", "math_formula_resolver" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "math_formula_convertor.exe" "\0"
-            VALUE "ProductName", "math_formula_convertor" "\0"
+            VALUE "OriginalFilename", "math_formula_resolver.exe" "\0"
+            VALUE "ProductName", "math_formula_resolver" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
