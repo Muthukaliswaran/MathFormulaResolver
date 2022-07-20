@@ -33,14 +33,4 @@ So we have created this package.
 
 Please have a look and report if any issues.
 
-Example,
-
-class HomeAppState extends State<HomeApp>{
-@override 
-void initState() {
-MathFormulaConvertor.mathFunc("add(1,2)").then((value){ 
-      print("Final result-->> ${value ?? ""}"); 
-});
-super.initState();
-}
-}
+**Please check main.dart file in the git repo for the example.**
