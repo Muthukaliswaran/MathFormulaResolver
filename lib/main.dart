@@ -19,7 +19,7 @@ class HomeAppState extends State<HomeApp>{
   @override
   void initState() {
     MathFormulaConvertor.mathFunc("add(1,2)").then((value){
-      print("Math func-->> ${value ?? ""}");
+      debugPrint("Math func-->> ${value ?? ""}");
     });
 
     super.initState();
