@@ -2,7 +2,7 @@ import 'package:function_tree/function_tree.dart';
 
 class MathFormulaConvertor{
   String evaluatedExpr ="";
-  mathFunc(String expr, int index) {
+  mathFunc(String expr) {
     evaluatedExpr = expr;
     int addIndex = expr.contains("add") ? expr.indexOf("add") : -1;
     int subtractIndex =
@@ -84,7 +84,7 @@ class MathFormulaConvertor{
       replaceCloseBracket();
     }
 
-    mathFunc(evaluatedExpr, index);
+    mathFunc(evaluatedExpr);
   }
 
   String replaceCharAt(String oldString, int index, String newChar) {
