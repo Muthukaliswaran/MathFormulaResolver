@@ -1,5 +1,5 @@
 name: math_formula_resolver
-description: A new Flutter project.
+description: A dart package for math formula conversion.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.

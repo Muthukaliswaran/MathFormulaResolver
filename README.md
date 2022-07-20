@@ -1,16 +1,36 @@
-# math_formula_resolver
+# math_formula_convertor
 
-A new Flutter project.
+A dart package for resolving the math formula which are in string.
 
 ## Getting Started
+This is the package in which you can able to resolve the math formula very easily from the string.
 
-This project is a starting point for a Flutter application.
+For example,
 
-A few resources to get you started if this is your first Flutter project:
+Consider you have this equation in string "add(1,5)" this package provide to resolve this equation
+and provide you the exact math equation result as "6"
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+multiply(5,10) -->> 5*10 -->> 50
+divide(5,10) -->> 5/10 -->> 0.5
+subtract(5,10) -->> 5-10 -->> -5
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+And also this package can support nesting of equations like below,
+
+add(multiply(5,10),add(1,2)) -->>  (5*10) + (1+2) -->> 50 + 3 -->> 53
+
+History of evolving this package,
+
+This is the package created for certain reason the one here i explained below,
+
+We the team(ATC) work in the project called FreshFlows the project management tool,
+that need this formula conversion package. We searched a lot but not find the exact one
+that matches our needs.
+
+So we have created this formula conversion ourself by analysing all the math stuffs. As it need
+to be grow.
+
+Here we have created this package to support the needy who want the exact things to be happen.
+
+So we have created this package.
+
+Please have a look and report if any issues.
